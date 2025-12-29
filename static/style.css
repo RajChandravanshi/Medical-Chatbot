@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to right, #26333d, #323741, #21214e);
+}
+
+/* 80% container */
+.chat-container {
+    width: 80vw;
+    height: 80vh;
+    max-width: 1200px;
+    max-height: 800px;
+}
+
+/* Card layout */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.45);
+}
+
+/* Header */
+.card-header {
+    border-radius: 15px 15px 0 0;
+    border-bottom: 0;
+}
+
+/* Footer */
+.card-footer {
+    border-radius: 0 0 15px 15px;
+    border-top: 0;
+}
+
+/* Chat body */
+.msg_card_body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Input */
+.type_msg {
+    background-color: rgba(0,0,0,0.3);
+    border: 0;
+    color: white;
+    height: 60px;
+}
+
+.type_msg:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Send button */
+.send_btn {
+    background-color: rgba(0,0,0,0.3);
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+/* User & bot messages */
+.msg_cotainer {
+    background-color: #52acff;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    max-width: 75%;
+    position: relative;
+}
+
+.msg_cotainer_send {
+    background-color: #58cc71;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    max-width: 75%;
+    position: relative;
+}
+
+/* Time */
+.msg_time,
+.msg_time_send {
+    font-size: 10px;
+    color: rgba(255,255,255,0.6);
+    position: absolute;
+    bottom: -18px;
+}
+
+.msg_time { left: 0; }
+.msg_time_send { right: 0; }
+
+/* Header avatar */
+.user_img {
+    height: 60px;
+    width: 60px;
+    border: 2px solid #f5f6fa;
+}
+
+.img_cont {
+    position: relative;
+    margin-right: 15px;
+}
+
+.online_icon {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    bottom: 2px;
+    right: 2px;
+    border: 2px solid white;
+}
+
+.user_info span {
+    font-size: 20px;
+    color: white;
+}
+
+.user_info p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 95vw;
+        height: 90vh;
+    }
+}
